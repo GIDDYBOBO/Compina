@@ -1,0 +1,486 @@
+* {
+  margin:0;
+   
+  padding:0;
+   
+  box-sizing: border-box;
+}
+
+
+html, body {
+  height:100%;
+}
+
+
+.container {
+  background-size:cover;
+
+              padding-bottom: 100px;
+            
+  width:100%;
+            
+  min-height: 100vh;
+            
+  justify-content: center;
+            
+  justify-items: center; 
+            
+  background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('image4.jpg');
+            
+  background-position:center;
+              border-radius:10px;
+}
+
+
+a {
+  color: whitesmoke;
+ 
+    text-decoration:none;
+}
+
+
+.navbar {
+  width:100%;
+
+           margin:25px;
+
+           padding:auto;
+
+           position: absolute;
+}
+
+
+.navbar h2
+{
+  font-size:4vmin;
+           
+  color:whitesmoke;
+}
+
+
+ul {
+  list-style-type: none;
+    
+  float: right;
+    
+  display: space-between;
+
+      display:inline-block;
+}
+
+
+ul li {
+  display:inline-block;
+       
+  text-align: left;
+}
+
+
+ul li a{
+  text-decoration: none;
+
+          border-radius: 10px;
+
+          border:1px solid transparent;
+        
+  color: whitesmoke;
+  
+          transition:0.6s ease;
+ 
+          padding:10px;
+}
+
+
+ul li a:hover {
+  background-color: #fc036b;
+
+                 color: whitesmoke;
+}
+
+
+.active {
+  background-color: #fc036b;
+ 
+           color: whitesmoke;
+         
+  border-radius:30px;
+         
+  margin:auto;
+
+           padding:auto;
+}
+
+
+.line {
+  height:4px;
+       
+  width:150px;
+
+         background-color: #fc036b;
+       
+  margin-top:3px;
+
+         margin-bottom:5px;
+
+         margin-left:150px;
+}
+
+
+header{
+  background-image: linear-gradient(rgba(0,0,0,0.9), rgba(0,0,0,0.9)), url('image3.jpg');
+
+         background-size:cover;
+       
+  background-size: 100%, 100%;
+       
+  background-position: buttom;
+       
+  height:60vh;
+
+         width:100%;
+
+         border-radius:5px;
+
+         display:flex;
+       
+  align-items: flex-end;
+       
+  background-blend-mode: screen;
+       
+  margin:auto;
+
+         padding: auto;
+}
+
+
+.content {
+  color: gray;
+          
+  margin-left:400px;
+         
+   margin-bottom:2px;
+          
+  margin-top:10px;
+            border-radius:20px;
+}
+
+
+.content h2 {
+  font-size: 7vmin;
+             
+  margin-right:100px;
+             
+  margin-left:115px;
+}
+
+
+.row {
+  display:flex;
+ 
+        width:100%;
+ 
+        justify-content: space-between;
+
+        text-align: center;
+}
+
+
+.col {
+  width:100%;
+      
+  height:100%;
+ 
+        padding:25px;
+      
+  margin:15px;
+}
+
+
+.reach {
+  margin-top:60px;
+
+          margin-left: 40px;
+
+          margin-right:10px;
+    
+      padding:20px;
+        
+  justify-content: center;
+ 
+          height:90vh;
+        
+  text-align: left;
+
+          width:95%;
+        
+  justify-content: center;
+        
+  justify-items: center;
+          border-radius:20px;
+}
+
+
+hr { height:5px;
+     color: red; }
+
+input {
+  background-color: whitesmoke;
+         border:3px solid #fc036b;
+       
+  border-right: transparent;
+
+         border-top: transparent;
+       
+  border-radius:5px;
+       
+  padding-left:50px;
+
+         padding-right: 50px;
+      
+   width: 80%;
+         box-shadow: 5px 5px 10px;
+         opacity:0.85;
+}
+
+
+.btn {
+  border-radius:10px;
+ 
+        border:2px solid transparent;
+      
+  background-color: lightpink;
+
+        color: blueviolet ;
+ 
+        padding:5px;
+      
+  height:30px;
+
+        width:10%;
+}
+
+
+.btn :hover {
+  background-color: plum;
+            
+   color: cornsilk;
+}
+
+
+#footer {
+  padding-bottom:0px;
+
+           margin-bottom: 0px;
+         
+  text-align: center;
+         
+  background-color: black;
+           border-radius:10px;
+           width:100%;
+
+           height:25vh;}
+
+
+dl{
+  display:space-between;
+}
+
+
+dl dt{
+  text-align: center;
+      
+  list-style-type:none;
+
+        color: #fc036b;
+}
+
+
+dt dd {
+  color: cornsilk;
+}
+
+
+pan {
+     color:cornsilk;
+           
+}
+
+
+.menu-btn {
+  display:none;
+
+             position:absolute;
+
+             top:30px;
+ 
+             right:30px;
+  
+             width:40px;
+
+             cursor: pointer;
+}
+
+
+.closebtn { display:none; }
+
+.spurss { display:none;}
+
+
+
+
+
+@media only screen and (max-width:900px)
+{
+ 
+
+#footer {
+  height:115%;
+  }
+
+span {
+   display:inline-block;
+
+
+         position: absolute;
+
+         text-allign:center;}
+ 
+
+.spurss { display:inline-block;}
+
+.spur { margi-right:300px; }
+
+.closebtn {
+    display: block;
+    
+ }
+
+
+.nav-links {
+   height: 0%;
+ 
+            width: 100%;
+
+            position: fixed;
+
+            z-index: 1;
+         
+   top: 0;
+         
+   left: 0;
+         
+
+   background-color: rgba(0,0,0,0.9);
+
+            overflow-y: hidden;
+            overflow-x: hidden;
+         
+   transition: 0.5s;
+            padding:0;
+}
+
+
+
+.navy {
+    position: absolute;
+              flex-direction:column;
+          
+    top: 25%;
+
+              height:100vh;
+              width: 100%;
+
+              margin:20px;
+              text-align: center;
+
+              justify-content: center;
+ 
+              margin-top: 30px;
+              margin-left:0px;
+}
+
+
+
+.nav-links a {
+    padding: 8px;
+          
+     text-decoration: none;
+           
+    font-size: 50px;
+           
+    color: #818181;
+           
+    display: block;
+  margin-left:40px;   transition: 0.3s;
+    justify-content: center;
+}
+
+.navbar a:hover, .nav-links a:focus {
+                 color: #f1f1f1;
+}
+
+
+
+.nav-links .closebtn {
+    position: absolute;
+ 
+                       top: 20px;
+                       right: 45px;
+}
+  
+
+.nav-links {overflow-y: auto;}
+  
+
+.nav-links a {font-size: 20px}
+  
+
+.nav-links .closebtn {
+    font-size: 40px;
+
+                       top: 15px;
+    right: 35px;
+                           float: right;
+   }
+  
+
+
+.row { flex-direction: column; }
+
+
+
+.row .col {
+ margin:20px auto;
+  
+}
+
+.mobile-menu{
+    margin-top:0px;
+  }
+  
+
+.menu-btn{
+    display:block;
+  }
+
+.container { width:105%;
+             overflow-x:hidden; }
+
+.btn {
+ width:70px;
+       height:30px; }
+
+input { width:200px;
+        height:30px; }
+
+.reach {
+  float:left;
+          font-size:10px;
+          margin-left:30px;
+}
+
+
+
+
+
+}
